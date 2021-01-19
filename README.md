@@ -1,4 +1,4 @@
-# Vlascovka
+# Vlaščovka
 Sociální síť se základními funkcemi jako:
 * chat
 * friend list
