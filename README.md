@@ -1,5 +1,5 @@
 # Vlascovka
 Sociální síť se základními funkcemi jako:
-*chat
-*friend list
-sdílení souborů
+* chat
+* friend list
+* sdílení souborů
