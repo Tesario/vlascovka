@@ -176,13 +176,14 @@ body {
 }
 
 .container-fluid .row {
-  min-height: 110vh;
+  min-height: 100vh;
   position: relative;
   z-index: 5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-top: 120px;
+  padding-bottom: 90px;
 }
 
 .container-fluid .row .chat {
@@ -252,6 +253,12 @@ body {
   -webkit-filter: brightness(0) invert(1);
           filter: brightness(0) invert(1);
   display: inline-block;
+}
+
+@media only screen and (min-width: 1050px) {
+  .container-fluid .row .col-3 .navbar-toggler {
+    display: none;
+  }
 }
 
 .container-fluid .row .col-3 ul {

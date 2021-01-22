@@ -6,11 +6,12 @@ body {
 }
 
 .container-fluid .row {
-  min-height: 110vh;
+  min-height: 100vh;
   position: relative;
   z-index: 5;
   display: flex;
   padding-top: 120px;
+  padding-bottom: 90px;
   .chat {
     box-shadow: 0px 0px 20px 1px $primaryTextColor;
     border-radius: 15px;
@@ -48,6 +49,13 @@ body {
           height: 3rem;
           filter: brightness(0) invert(1);
           display: inline-block;
+        }
+      }
+    }
+    .navbar-toggler {
+      @media only screen and (min-width: 1050px) {
+        & {
+          display: none;
         }
       }
     }
