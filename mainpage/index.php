@@ -17,49 +17,27 @@
     ?>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-9">
+            <div class="col-md-12 col-lg-9">
                 <div class="chat">
                     <h1>CHAT coming soon...</h1>
                 </div>
             </div>
-            <div class="sidebar col-3 pr-0">
+            <div class="sidebar col-md-12 col-lg-3 pr-0">
+                <div class="wrapper">
+                    <h2>Friend list:</h2>
 
-                <div class="pos-f-t">
-                    <nav class="navbar navbar-dark justify-content-end">
-                        <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                    </nav>
-                    <div class="collapse show" id="navbarToggleExternalContent">
-                        <div class="p-4">
-                            <h2>Friend list:</h2>
-                            <div class="wrapper">
-                                <button type="button" class="btn btn-primary btn-lg mb-3">Správa přátel <div class="img-box"><img src="login/img/friends.png" alt="friends"></div></button>
-                            </div>
-                            <ul class="list-group">
-                                <li class="list-group-item">User 1</li>
-                                <li class="list-group-item">User 1</li>
-                                <li class="list-group-item">User 1</li>
-                                <li class="list-group-item">User 1</li>
-                                <li class="list-group-item">User 1</li>
-                                <li class="list-group-item">User 1</li>
-                                <li class="list-group-item">User 1</li>
-                                <li class="list-group-item">User 1</li>
-                                <li class="list-group-item">User 1</li>
-                                <li class="list-group-item">User 1</li>
-                                <li class="list-group-item">User 1</li>
-                                <li class="list-group-item">User 1</li>
-                            </ul>
-                        </div>
-                    </div>
-
+                    <button type="button" class="btn btn-primary btn-lg mb-3">Správa přátel <div class="img-box"><img src="login/img/friends.png" alt="friends"></div></button>
                 </div>
-
-
+                <div class="list-group">
+                    <div class="list-group-item">User 1</div>
+                    <div class="list-group-item">User 1</div>
+                    <div class="list-group-item">User 1</div>
+                    <div class="list-group-item">User 1</div>
+                    <div class="list-group-item">User 1</div>
+                    <div class="list-group-item">User 1</div>
+                </div>
             </div>
         </div>
-
-
     </div>
 
     <?php
