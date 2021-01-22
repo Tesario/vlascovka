@@ -8,7 +8,7 @@
 
 html {
   font-size: 10px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -41,7 +41,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #808080;
+  background: linear-gradient(-45deg, #dbdbdb 0%, #a8a8a8 100%);
 }
 
 h1 {
@@ -64,7 +64,7 @@ p {
 .btnPlay,
 button,
 input {
-  font: 2.5rem 'Montserrat';
+  font: 2.5rem "Montserrat";
   outline: none;
   border: none;
   background-color: transparent;
@@ -73,8 +73,8 @@ input {
 }
 
 .btnPlay,
-input[type=button],
-input[type=submit],
+input[type="button"],
+input[type="submit"],
 button {
   -webkit-transition: 0.3s ease transform;
   transition: 0.3s ease transform;
@@ -83,8 +83,8 @@ button {
 }
 
 .btnPlay:hover,
-input[type=button]:hover,
-input[type=submit]:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
 button:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
@@ -93,7 +93,7 @@ button:hover {
 .logo-box {
   width: 100px;
   height: 100px;
-  border: 3px solid #86818C;
+  border: 3px solid #86818c;
   border-radius: 50px;
   margin-left: 1rem;
 }
