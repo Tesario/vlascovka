@@ -1,142 +1,144 @@
-
-$primaryTextColor:#ffffff;
+$primaryTextColor: #ffffff;
 $primaryTextColorInvert: #000000;
-$buttonBG:#C2F22C;
-$buttonBGsec:#95D030;
+$buttonBG: #c2f22c;
+$buttonBGsec: #95d030;
 
-
-@function linearBG($firstC, $secondC, $degrees){
-	@return linear-gradient(#{$degrees}deg, #{$firstC} 0%, #{$secondC} 100%);
+@function linearBG($firstC, $secondC, $degrees) {
+  @return linear-gradient(#{$degrees}deg, #{$firstC} 0%, #{$secondC} 100%);
 }
-@mixin wrapperHoriz{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: row;
+@mixin wrapperHoriz {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
 }
-@mixin wrapperVertic{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
+@mixin wrapperVertic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-@mixin btnTransition{
-	transition: 0.3s ease transform;
-	cursor:pointer;
-	&:hover{
-		transform: scale(1.05);
-	}
+@mixin btnTransition {
+  transition: 0.3s ease transform;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap");
-*{
-    margin: 0px;
-    padding: 0px;
-	box-sizing: border-box;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
-html{
-	font-size: 10px;
-	font-family: 'Montserrat', sans-serif;
-	scroll-behavior: smooth;
+html {
+  font-size: 10px;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
 }
 
 a {
-	text-decoration: none;
-	color:$primaryTextColor;
-	text-align: center;
+  text-decoration: none;
+  color: $primaryTextColor;
+  text-align: center;
 }
 img {
-	height: 100%;
-	width: 100%;
-	object-fit: cover;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 .container {
-	min-height: 100vh;	
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	background: linear-gradient(-45deg, rgba(219,219,219,1) 0%, rgba(168,168,168,1) 100%);
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(
+    -45deg,
+    rgba(219, 219, 219, 1) 0%,
+    rgba(168, 168, 168, 1) 100%
+  );
 }
-h1{
-	text-transform: uppercase;
-	color: $primaryTextColor;
-	font-size: 3rem;
-	text-align: center;
+h1 {
+  text-transform: uppercase;
+  color: $primaryTextColor;
+  font-size: 3rem;
+  text-align: center;
 }
-h2{
-	color: $primaryTextColor;
-	font-size: 2rem;	
-	text-align: center;
+h2 {
+  color: $primaryTextColor;
+  font-size: 2rem;
+  text-align: center;
 }
-p{
-	font-size:1.5rem;
+p {
+  font-size: 1.5rem;
 }
 .btnPlay,
 button,
-input{
-	font:2.5rem 'Montserrat';
-	outline:none;
-	border:none;
-	background-color: transparent;
-	color:#{$primaryTextColor};
-	padding:5px 10px;
+input {
+  font: 2.5rem "Montserrat";
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: #{$primaryTextColor};
+  padding: 5px 10px;
 }
 .btnPlay,
-input[type=button],
-input[type=submit],
-button{
-	@include btnTransition();
-	cursor: pointer;
+input[type="button"],
+input[type="submit"],
+button {
+  @include btnTransition();
+  cursor: pointer;
 }
-.logo-box{
-	width: 100px;
-	height: 100px;
-	border: 3px solid #86818C;
-	border-radius: 50px;
-	margin-left: 1rem;
+.logo-box {
+  width: 100px;
+  height: 100px;
+  border: 3px solid #86818c;
+  border-radius: 50px;
+  margin-left: 1rem;
 }
-.img-box{
-	width: 50px;
-	height: 50px;
+.img-box {
+  width: 50px;
+  height: 50px;
 }
 
 ::-webkit-scrollbar {
-    width: 15px;
+  width: 15px;
 }
 ::-webkit-scrollbar-thumb {
-    background: #a3a3a3;
+  background: #a3a3a3;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: #888888;
+  background: #888888;
 }
 ::-webkit-scrollbar-track {
-    background: rgb(255, 255, 255);
+  background: rgb(255, 255, 255);
 }
-/* Header */ 
-#header{
-	position: fixed;
-	z-index: 1000;
-	height: 100px;
-	width: 100%;
-	@include wrapperHoriz();
-	justify-content: start;
-	column-gap: 2rem;
-	transition:0.5s ease all;
-	.logo-box{
-		align-self: baseline;
-		filter:brightness(0) invert(1);
-	}
-	& > *{
-		transition:0.5s ease all;
-	}
+/* Header */
+#header {
+  position: fixed;
+  z-index: 1000;
+  height: 100px;
+  width: 100%;
+  @include wrapperHoriz();
+  justify-content: start;
+  column-gap: 2rem;
+  transition: 0.5s ease all;
+  .logo-box {
+    align-self: baseline;
+    filter: brightness(0) invert(1);
+  }
+  & > * {
+    transition: 0.5s ease all;
+  }
 }
-/* End Header */ 
+/* End Header */
 
 /* Footer */
-#footer{
-    position: relative;
-    margin-top: -50px;
-	height: 50px;
+#footer {
+  position: relative;
+  margin-top: -50px;
+  height: 50px;
 }
 /* End Footer */
